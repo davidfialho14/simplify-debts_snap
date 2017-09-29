@@ -18,3 +18,7 @@ parts:
     python-version: python3
     source: https://github.com/ric2b/Mutual_Debt_Simplification.git
     source-branch: optionally_auto_open
+    stage-packages:
+      - graphviz
+    install: |
+      dot -c
