@@ -8,9 +8,12 @@ description: |
 apps:
   simplify-debts:
     command: simplify-debts
+    plugs:
+      - home
+      - x11
 
 grade: devel
-confinement: devmode
+confinement: strict
 
 parts:
   simplify-debts:
@@ -22,3 +25,9 @@ parts:
       - graphviz
     install: |
       dot -c
+
+  configuration:
+    plugin: dump
+    source: .
+    prime:
+      - bin/entrypoint.sh
