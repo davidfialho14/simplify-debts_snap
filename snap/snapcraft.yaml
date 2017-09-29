@@ -12,7 +12,7 @@ apps:
       - home
       - x11
 
-grade: devel
+grade: stable
 confinement: strict
 
 parts:
