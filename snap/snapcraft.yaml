@@ -1,0 +1,13 @@
+name: simplify-debts
+version: '0.1'
+summary: Simple tool to simplify mutual debts
+description: |
+  In a group of people with debt between themselves, this program finds the
+  absolutely necessary transactions to wipe away the debt.
+
+grade: devel
+confinement: devmode
+
+parts:
+  simplify-debts:
+    plugin: python
