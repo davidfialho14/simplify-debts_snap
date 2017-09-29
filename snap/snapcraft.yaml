@@ -5,9 +5,16 @@ description: |
   In a group of people with debt between themselves, this program finds the
   absolutely necessary transactions to wipe away the debt.
 
+apps:
+  simplify-debts:
+    command: simplify-debts
+
 grade: devel
 confinement: devmode
 
 parts:
   simplify-debts:
     plugin: python
+    python-version: python3
+    source: https://github.com/ric2b/Mutual_Debt_Simplification.git
+    source-branch: optionally_auto_open
