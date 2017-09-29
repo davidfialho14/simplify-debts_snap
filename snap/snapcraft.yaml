@@ -25,9 +25,3 @@ parts:
       - graphviz
     install: |
       dot -c
-
-  configuration:
-    plugin: dump
-    source: .
-    prime:
-      - bin/entrypoint.sh
